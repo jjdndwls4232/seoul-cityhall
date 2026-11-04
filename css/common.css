@@ -1,0 +1,260 @@
+/* ============================================
+   공통 - 모바일/태블릿 기본값 (~767px)
+   ============================================ */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, "맑은 고딕", "Malgun Gothic", -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, sans-serif;
+    color: #222;
+}
+
+header {
+    width: 100%;
+}
+
+/* 상단 프로모션 배너 */
+.top-banner {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1920/231;
+    background-image: url(../img/Top_image_main.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* 일반 닫기 버튼 */
+.banner-close-nomarl {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 1.3rem;
+}
+
+.banner-close-nomarl:hover {
+    color: #fff;
+}
+
+/* 오늘 하루 보지않기 버튼 */
+.top-banner .banner-close {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    background-color: rgb(0 0 0 / .45);
+    color: #fff;
+    border-radius: 2px;
+    font-size: .8rem;
+    padding: 10px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 20px;
+}
+
+.top-banner .banner-close:hover {
+    background-color: #fff;
+    color: #111;
+    font-weight: 700;
+}
+
+.nuri-row {
+    width: 100%;
+    background-color: #edf1f5;
+}
+
+.nuri {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+#Taegeukgi {
+    width: auto;
+    height: 16px;
+}
+
+.nuri-tx {
+    flex: 1 1 auto;
+    min-width: 0px;
+    margin-left: 6px;
+    font-size: .72rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.utillity-wrap {
+    display: none;
+}
+
+/* 메인 헤더 바 */
+.content-bar {
+    width: 100%;
+    background-color: #0761b9;
+}
+
+.content-wrap {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-toggle i {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+/* 모바일에선는 안보이게 하는 작업 */
+.logo-pc {
+    display: none;
+}
+
+.content-wrap .gnb {
+    display: none;
+}
+
+.login-btn {
+    display: none;
+}
+
+.menu-toggle-desktop {
+    display: none;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #fff;
+}
+
+/* 모바일 전용 링크 목록 */
+.footer-links-mobile {
+    padding: 20px 20px 16px;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.footer-links-mobile ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 6px 8px;
+    font-size: .76rem;
+    color: #555;
+    margin-bottom: 14px;
+}
+
+.footer-links-mobile ul li {
+    white-space: nowrap;
+}
+
+.footer-links-mobile ul a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.footer-links-mobile ul li[aria-hidden] {
+    color: #ccc;
+}
+
+.channel-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background-color: #fee500;
+    color: #111;
+    font-size: .78rem;
+    font-weight: 700;
+}
+
+.channel-btn span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: #111;
+    color: #fee500;
+    font-size: .55rem;
+}
+
+.footer-cols {
+    display: none;
+}
+
+.footer-bottom {
+    padding: 20px 20px 28px;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-title {
+    display: none;
+}
+
+.footer-logo img {
+    height: 22px;
+}
+
+.footer-address p {
+    font-size: .76rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+.footer-address .copyright {
+    margin-top: 4px;
+    color: #999;
+}
+
+/* top button 위치 조정 */
+.top-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #555;
+    font-size: 1.3rem;
+    padding-top: 2px;
+}
+
+.footer-links-desktop,
+.footer-extra {
+    display: none;
+}
+
+.top-bt .pc-top-btn {
+    display: none;
+}
+
+/* 모바일 전용 햄버거 버튼 */
+.menu-toggle-mobile {
+    color: #fff;
+    font-size: 1.5rem;
+}
